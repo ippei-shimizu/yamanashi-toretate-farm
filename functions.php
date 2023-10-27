@@ -24,3 +24,10 @@ add_action('admin_enqueue_scripts', 'my_admin_theme_style');
 
 //アイキャッチ画像を有効化//
 add_theme_support('post-thumbnails');
+
+// 画像パス変数
+function set_global_variables() {
+  global $global_image_path;
+  $global_image_path = get_template_directory_uri() . '/assets/images/';
+}
+add_action('after_setup_theme', 'set_global_variables');

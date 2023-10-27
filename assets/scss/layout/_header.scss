@@ -1,0 +1,49 @@
+@use "../foundation/base" as *;
+
+.header {
+  position: relative;
+}
+.header-center-text {
+  text-align: center;
+  font-family: $family-inter;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 4.2px;
+  padding-top: 81px;
+}
+.header-nav-area {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.header-nav {
+  position: absolute;
+  top: 57px;
+  right: 50px;
+}
+.header-nav-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+.header-list {
+  text-align: right;
+  a {
+    font-family: $family-inter;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 4.2px;
+  }
+}
+.logo {
+  display: block;
+  position: absolute;
+  top: 177px;
+  right: 52.24px;
+}
+.shop-link {
+  img {
+    display: block;
+    margin: -20px 30px 0 auto;
+  }
+}
