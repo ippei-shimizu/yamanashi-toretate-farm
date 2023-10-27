@@ -21,6 +21,10 @@
     <?php if (is_front_page()) : ?>
       <p class="header-center-text">SINCE 2017.05</p>
     <?php endif; ?>
+    <div class="header-title-box">
+      <img class="header-title" src="<?php echo $global_image_path; ?>logo-text.png" width="503" height="74" alt="山梨とれたて農園">
+      <p class="header-title-sub">Yamanashi Toretate Farm</p>
+    </div>
     <div class="header-nav-area">
       <div class="nav-bg">
         <img src="<?php echo $global_image_path; ?>nav-bg.svg" width="538" height="390" alt="">

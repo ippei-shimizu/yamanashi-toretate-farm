@@ -1,5 +1,15 @@
 @use "./mixin";
 
+@font-face {
+  font-family: "AmsterdamOne-eZ12l";
+  src: url("../fonts/AmsterdamOne-eZ12l.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  src: url("../fonts/A-OTF-GothicMB101Pro-DeBold.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +24,19 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "A-OTF-GothicMB101Pro-DeBold", "Inter", "AmsterdamOne-eZ12l",
+    sans-serif;
   color: #000;
 }
 
+img {
+  height: auto;
+}
+
+// color
+$color-text: #3e3a39;
+
 // family
 $family-inter: "Inter";
+$family-amsterdam: "AmsterdamOne-eZ12l";
+$family-gothicMB-de-bold: "A-OTF-GothicMB101Pro-DeBold";
