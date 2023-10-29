@@ -1,10 +1,12 @@
+<?php get_header(); ?>
+
 <div id="loading" class="loading">
   <div class="loading-icon-box">
-    
+    <div class="loading-border"></div>
+    <img class="loading-icon" src="<?php echo $global_image_path; ?>loading-icon.svg" width="60" height="45" alt="">
+    <img class="loading-logo" src="<?php echo $global_image_path; ?>logo.svg" alt="山梨とれたて農園" width="126" height="90">
   </div>
 </div>
-
-<?php get_header(); ?>
 
 <div>
   <section class="fv">
