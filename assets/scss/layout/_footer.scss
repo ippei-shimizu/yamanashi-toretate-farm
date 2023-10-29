@@ -1,0 +1,191 @@
+@use "../foundation/base" as *;
+
+.footer {
+  position: relative;
+  top: -1px;
+  background-color: #fff;
+}
+.footer-inner {
+  width: 100%;
+  height: 100%;
+}
+.footer-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background: #295f5f;
+    mix-blend-mode: multiply;
+  }
+}
+.footer-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 304px;
+  column-gap: 165px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 286px;
+  margin-left: 127px;
+  padding: 203px 0 60px;
+}
+.coming-soon {
+  color: $color-text;
+  text-align: center;
+  font-family: $family-AcademyACTTRegular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+  height: 172px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-text {
+  margin-top: 25px;
+  color: #fff;
+  text-align: center;
+  font-family: $family-AcademyACTTRegular;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+}
+.footer-logo {
+  margin: 0 auto;
+  display: block;
+}
+.footer-info {
+  margin: 24px 0 8px;
+  color: #fff;
+  font-family: $family-gothicMB-de-Light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1.6px;
+}
+.footer-google-map {
+  background-color: #fff;
+  display: block;
+  width: 171px;
+  height: 38px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.google-map-text {
+  color: $color-text;
+  font-family: $family-gothicMB-de-Light;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 22px;
+    background-color: $color-text;
+    -webkit-mask-image: url(../assets/images/icon-pin.svg);
+    mask-image: url(../assets/images/icon-pin.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+}
+.contact-link {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  margin: 105px auto 20px;
+  color: #fff;
+  font-family: $family-gothicMB-de-Light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+.tel-number {
+  color: #fff;
+  font-family: $family-gothicMB-de-bold;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-align: center;
+  display: block;
+  margin-bottom: 25px;
+}
+.instagram-link {
+  display: block;
+  margin: 0 auto;
+  width: 76px;
+  height: 76px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    -webkit-mask-image: url(../assets/images/icon-instagram.svg);
+    mask-image: url(../assets/images/icon-instagram.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.footer-copy {
+  grid-column-start: 2;
+  margin: 93px auto 0;
+  color: #fff;
+  font-family: $family-gothicMB-de-Light;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
