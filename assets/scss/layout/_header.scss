@@ -64,8 +64,68 @@
 .shop-link {
   display: block;
   width: fit-content;
-  margin: -20px 30px 0 auto;
+  position: absolute;
+  top: 370px;
+  right: 30px;
   img {
     display: block;
+  }
+}
+.nav-bg {
+  width: 1255px;
+  height: 554px;
+  overflow: visible;
+  position: absolute;
+  left: -849px;
+  top: -439px;
+  -webkit-transform: rotate(-133deg);
+  -ms-transform: rotate(-133deg);
+  transform: rotate(-133deg);
+  display: flex;
+}
+.nav-bg-line {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: flex;
+  height: 100%;
+}
+.nav-bg-line-1 {
+  animation-name: looping1;
+  will-change: transform;
+  animation-delay: calc(-1 * (0.5 * 68s));
+  animation-duration: 68s;
+}
+.nav-bg-line-2 {
+  animation-name: looping2;
+  will-change: transform;
+  animation-duration: 68s;
+}
+.loop_shape {
+  max-width: initial;
+  border: none;
+  vertical-align: top;
+  display: block;
+  height: 100%;
+  transform: scale(1.005);
+}
+
+@keyframes looping1 {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes looping2 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
   }
 }

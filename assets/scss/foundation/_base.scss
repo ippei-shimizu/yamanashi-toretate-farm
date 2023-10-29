@@ -10,6 +10,11 @@
   src: url("../fonts/A-OTF-GothicMB101Pro-DeBold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: "AcademyACTTRegular";
+  src: url("../fonts/AcademyACTTRegular.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +30,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "A-OTF-GothicMB101Pro-DeBold", "Inter", "AmsterdamOne-eZ12l",
-    sans-serif;
+    "AcademyACTTRegular", sans-serif;
   color: #000;
 }
 
@@ -35,8 +40,10 @@ img {
 
 // color
 $color-text: #3e3a39;
+$color-pink: #fbc6d0;
 
 // family
 $family-inter: "Inter";
 $family-amsterdam: "AmsterdamOne-eZ12l";
 $family-gothicMB-de-bold: "A-OTF-GothicMB101Pro-DeBold";
+$family-AcademyACTTRegular: "AcademyACTTRegular";

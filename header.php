@@ -27,7 +27,12 @@
     </div>
     <div class="header-nav-area">
       <div class="nav-bg">
-        <img src="<?php echo $global_image_path; ?>nav-bg.svg" width="538" height="390" alt="">
+        <span class="nav-bg-line nav-bg-line-1">
+          <img class="loop_shape" src="<?php echo $global_image_path; ?>nav-bg-line.svg" alt="">
+        </span>
+        <span class="nav-bg-line nav-bg-line-2">
+          <img class="loop_shape" src="<?php echo $global_image_path; ?>nav-bg-line.svg" alt="">
+        </span>
       </div>
         <nav class="header-nav">
           <ul class="header-nav-box">

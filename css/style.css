@@ -6,6 +6,10 @@
   font-family: "A-OTF-GothicMB101Pro-DeBold";
   src: url("../fonts/A-OTF-GothicMB101Pro-DeBold.otf") format("opentype");
 }
+@font-face {
+  font-family: "AcademyACTTRegular";
+  src: url("../fonts/AcademyACTTRegular.otf") format("opentype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +24,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "A-OTF-GothicMB101Pro-DeBold", "Inter", "AmsterdamOne-eZ12l", sans-serif;
+  font-family: "A-OTF-GothicMB101Pro-DeBold", "Inter", "AmsterdamOne-eZ12l", "AcademyACTTRegular", sans-serif;
   color: #000;
 }
 
@@ -102,17 +106,82 @@ img {
 .shop-link {
   display: block;
   width: fit-content;
-  margin: -20px 30px 0 auto;
+  position: absolute;
+  top: 370px;
+  right: 30px;
 }
 .shop-link img {
   display: block;
 }
 
+.nav-bg {
+  width: 1255px;
+  height: 554px;
+  overflow: visible;
+  position: absolute;
+  left: -849px;
+  top: -439px;
+  -webkit-transform: rotate(-133deg);
+  -ms-transform: rotate(-133deg);
+  transform: rotate(-133deg);
+  display: flex;
+}
+
+.nav-bg-line {
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: flex;
+  height: 100%;
+}
+
+.nav-bg-line-1 {
+  animation-name: looping1;
+  will-change: transform;
+  animation-delay: -34s;
+  animation-duration: 68s;
+}
+
+.nav-bg-line-2 {
+  animation-name: looping2;
+  will-change: transform;
+  animation-duration: 68s;
+}
+
+.loop_shape {
+  max-width: initial;
+  border: none;
+  vertical-align: top;
+  display: block;
+  height: 100%;
+  transform: scale(1.005);
+}
+
+@keyframes looping1 {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+@keyframes looping2 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+}
 /* fv
    ----------------------------------------------------------------- */
 .fv {
-  position: relative;
-  margin-bottom: 385px;
+  position: sticky;
+  top: -1000px;
+  margin-bottom: 455px;
   padding-top: 80px;
 }
 
@@ -292,6 +361,562 @@ fv-slide-img-box {
     transform-origin: 0% 100%;
     -webkit-transform: scale(1, 0);
     transform: scale(1, 0);
+  }
+}
+/* section about
+   ----------------------------------------------------------------- */
+.about {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.about-inner {
+  overflow: hidden;
+}
+
+.pink-mountain-img {
+  width: 100%;
+}
+
+.about-contents-bg {
+  background-color: #fbc6d0;
+  padding-bottom: 107px;
+}
+
+.about-title-area {
+  width: fit-content;
+  margin: 0 auto 36px;
+}
+
+.about-title-sub {
+  color: #fff;
+  font-family: "AmsterdamOne-eZ12l";
+  font-size: 26.435px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.643px;
+  transform: rotate(-11.048deg);
+  width: fit-content;
+}
+
+.about-title-box {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.about-title {
+  color: #fff;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 53.568px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 5.357px;
+}
+
+.about-ha {
+  position: absolute;
+  width: 84px;
+}
+
+.about-ha-01 {
+  right: -52px;
+  top: 0;
+}
+
+.about-ha-02 {
+  right: -118px;
+  bottom: -8px;
+}
+
+.about-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.2px;
+}
+
+.about-bottom-img {
+  width: fit-content;
+  margin-left: 70px;
+  display: flex;
+  column-gap: 11px;
+}
+.about-bottom-img img {
+  display: block;
+}
+
+.about-01 {
+  padding-top: 360px;
+  padding-bottom: 540px;
+  background-color: #fff;
+}
+
+.about-01-contents {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 7%;
+  padding: 0 129px 228px 96px;
+}
+
+.about-01-img-box h3 {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "AcademyACTTRegular";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7px;
+  text-align: left;
+  margin-top: 11px;
+}
+.about-01-img-box p {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "AcademyACTTRegular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.about-01-text-box {
+  max-width: 356px;
+}
+
+.about-01-num-box {
+  margin-bottom: 62px;
+}
+.about-01-num-box p {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 11.9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.57px;
+}
+
+.about-01-num {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "AcademyACTTRegular";
+  font-size: 153px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  border-bottom: 3px solid #3e3a39;
+}
+
+.about-01-text-wrap h4 {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+
+.about-01-text {
+  color: #3e3a39;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+
+.about-01-link {
+  width: 314px;
+  height: 48px;
+  background-color: #fbc6d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 70px auto 0;
+}
+.about-01-link a {
+  display: block;
+  color: #3e3a39;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.2px;
+}
+
+.about-slide-img-loop {
+  display: flex;
+  width: 100%;
+  column-gap: 50px;
+  overflow: hidden;
+}
+
+.about-slide-img-box {
+  display: flex;
+  width: 100%;
+  column-gap: 50px;
+  animation: loop 50s infinite linear 0.5s both;
+  position: relative;
+}
+.about-slide-img-box img {
+  display: block;
+  width: 16.6666666667vw;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.svg-animation {
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.bg-label {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 2px;
+  opacity: 0.5;
+  height: 178px;
+  overflow: hidden;
+  white-space: pre;
+  width: 100%;
+  font-size: 0px;
+  display: flex;
+}
+.bg-label svg {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  transition: none;
+  overflow: hidden;
+  margin-left: 40px;
+  animation: loopSvg 50s linear infinite;
+  flex-shrink: 0;
+}
+.bg-label svg .path {
+  stroke-miterlimit: 10;
+  stroke: #fff;
+}
+
+@keyframes fill-animation {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: transparent;
+  }
+  100% {
+    fill: #fbc6d0;
+  }
+}
+.path-1 {
+  animation-name: fill-animation;
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-2 {
+  animation-name: fill-animation;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-3 {
+  animation-name: fill-animation;
+  animation-delay: 6s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-4 {
+  animation-name: fill-animation;
+  animation-delay: 9s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-5 {
+  animation-name: fill-animation;
+  animation-delay: 12s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-6 {
+  animation-name: fill-animation;
+  animation-delay: 15s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-7 {
+  animation-name: fill-animation;
+  animation-delay: 18s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-8 {
+  animation-name: fill-animation;
+  animation-delay: 21s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-9 {
+  animation-name: fill-animation;
+  animation-delay: 24s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-10 {
+  animation-name: fill-animation;
+  animation-delay: 27s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-11 {
+  animation-name: fill-animation;
+  animation-delay: 30s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-12 {
+  animation-name: fill-animation;
+  animation-delay: 33s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-13 {
+  animation-name: fill-animation;
+  animation-delay: 36s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-14 {
+  animation-name: fill-animation;
+  animation-delay: 39s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-15 {
+  animation-name: fill-animation;
+  animation-delay: 42s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-16 {
+  animation-name: fill-animation;
+  animation-delay: 45s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-17 {
+  animation-name: fill-animation;
+  animation-delay: 48s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-18 {
+  animation-name: fill-animation;
+  animation-delay: 51s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-19 {
+  animation-name: fill-animation;
+  animation-delay: 54s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-20 {
+  animation-name: fill-animation;
+  animation-delay: 57s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-21 {
+  animation-name: fill-animation;
+  animation-delay: 60s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-22 {
+  animation-name: fill-animation;
+  animation-delay: 63s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-23 {
+  animation-name: fill-animation;
+  animation-delay: 66s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-24 {
+  animation-name: fill-animation;
+  animation-delay: 69s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-25 {
+  animation-name: fill-animation;
+  animation-delay: 72s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-26 {
+  animation-name: fill-animation;
+  animation-delay: 75s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-27 {
+  animation-name: fill-animation;
+  animation-delay: 78s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-28 {
+  animation-name: fill-animation;
+  animation-delay: 81s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-29 {
+  animation-name: fill-animation;
+  animation-delay: 84s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-30 {
+  animation-name: fill-animation;
+  animation-delay: 87s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-31 {
+  animation-name: fill-animation;
+  animation-delay: 90s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-32 {
+  animation-name: fill-animation;
+  animation-delay: 93s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-33 {
+  animation-name: fill-animation;
+  animation-delay: 96s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-34 {
+  animation-name: fill-animation;
+  animation-delay: 99s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-35 {
+  animation-name: fill-animation;
+  animation-delay: 102s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-36 {
+  animation-name: fill-animation;
+  animation-delay: 105s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-37 {
+  animation-name: fill-animation;
+  animation-delay: 108s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-38 {
+  animation-name: fill-animation;
+  animation-delay: 111s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.path-39 {
+  animation-name: fill-animation;
+  animation-delay: 114s;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes loopSvg {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 /*# sourceMappingURL=style.css.map */
