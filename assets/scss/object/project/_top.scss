@@ -452,7 +452,7 @@ fv-slide-img-box {
   background-color: #fff;
   padding-top: 270px;
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 3;
   .section-tile {
     margin-top: 44px;
@@ -890,5 +890,67 @@ fv-slide-img-box {
     left: initial;
     bottom: 0;
     flex-direction: row-reverse;
+  }
+}
+
+@include media(bp1200) {
+  .about-01-img-box {
+    img {
+      width: 100%;
+    }
+  }
+  .orenge-wood-left {
+    top: -112px;
+  }
+  .orenge-wood-right {
+    top: -67px;
+  }
+  .sky-img {
+    right: 182px;
+  }
+}
+
+@include media(bp1025) {
+  .fv-title-area {
+    bottom: 60px;
+  }
+  .fv-img-right {
+    margin-top: 232px;
+  }
+  .about-slide-img-loop {
+    column-gap: 25px;
+  }
+  .about-slide-img-box {
+    column-gap: 25px;
+    width: auto;
+    img {
+      display: block;
+      width: calc(100vw / 4);
+    }
+  }
+  .about-01-contents {
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+  .vegetable-slide-img-box {
+    display: block;
+  }
+  .vegetable-img-contents {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .vegetable-slide-text-box {
+    margin: 28px auto 0;
+  }
+  .orenge-wood-left {
+    top: -115px;
+    left: 100px;
+  }
+  .orenge-wood-right {
+    top: -86px;
+    right: 20px;
+  }
+  .sky-img {
+    right: 31px;
   }
 }
