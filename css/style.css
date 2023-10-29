@@ -378,7 +378,7 @@ fv-slide-img-box {
 .about-inner {
   overflow: hidden;
   position: sticky;
-  top: -132px;
+  top: -324px;
   z-index: 2;
 }
 
@@ -471,7 +471,7 @@ fv-slide-img-box {
 
 .about-01-contents {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   column-gap: 7%;
   padding: 0 129px 228px 96px;
 }
@@ -1186,7 +1186,7 @@ fv-slide-img-box {
 }
 .toreate-03-contents .swiper-vegetable {
   overflow: hidden;
-  background-color: #EA9D65;
+  background-color: #ea9d65;
 }
 .toreate-03-contents .vegetable-slide-img-box-1 .vegetable-slide-illust {
   width: 170.758px;
@@ -1225,5 +1225,185 @@ fv-slide-img-box {
 
 .toretate-slide-box {
   overflow: hidden;
+}
+
+/* section toretate-04
+   ----------------------------------------------------------------- */
+.toreate-04-contents .toreate-02-contents-inner {
+  overflow: initial;
+  padding-top: 11px;
+}
+.toreate-04-contents .swiper-vegetable {
+  overflow: hidden;
+  background-color: #d5e7f8;
+}
+.toreate-04-contents .vegetable-theme,
+.toreate-04-contents .vegetable-slide-sub,
+.toreate-04-contents .vegetable-name span,
+.toreate-04-contents .vegetable-description,
+.toreate-04-contents .vegetable-slide-num,
+.toreate-04-contents .vegetable-slide-num span {
+  color: #3e3a39;
+}
+.toreate-04-contents .vegetable-name span {
+  border-color: #3e3a39;
+}
+.toreate-04-contents .vegetable-slide-img-box-1 .vegetable-slide-illust {
+  width: 147.195px;
+  left: -122px;
+}
+
+.sky-img {
+  position: absolute;
+  right: 261px;
+  top: -116px;
+}
+
+/* section topics
+   ----------------------------------------------------------------- */
+.topics {
+  position: relative;
+  top: -1px;
+  padding-bottom: 440px;
+  background-color: #fff;
+}
+.topics .toreate-03 {
+  position: relative;
+  padding-bottom: 158px;
+}
+.topics .about-01-num {
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.note-contents {
+  background-color: #fff;
+  overflow: hidden;
+  margin-left: 120px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.note-slide {
+  border: 1px solid #3e3a39;
+  padding: 42px 45px 0;
+  position: relative;
+  overflow: hidden;
+}
+.note-slide:hover .note-hover-text {
+  opacity: 1;
+}
+.note-slide:hover .note-hover-area {
+  bottom: 0;
+}
+
+.note-img {
+  width: 100%;
+  height: 14.7vw;
+  object-fit: cover;
+}
+
+.note-date {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "AcademyACTTRegular";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 15px auto;
+}
+
+.note-title {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.note-excerpt {
+  color: #3e3a39;
+  font-family: A-OTF Gothic MB101 Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin: 22px 0 0;
+  min-height: 84px;
+}
+
+.note-hover {
+  margin-top: 42px;
+}
+
+.note-hover-text {
+  color: #85be84;
+  text-align: center;
+  font-family: "AcademyACTTRegular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.note-hover-area {
+  height: 51px;
+  background-color: #85be84;
+  position: relative;
+  bottom: -31px;
+  transition: bottom 0.4s ease;
+}
+
+.topics .swiper-button-next,
+.topics .swiper-button-prev {
+  display: flex;
+  column-gap: 6px;
+}
+.topics .swiper-button-next::after,
+.topics .swiper-button-prev::after {
+  display: none;
+}
+.topics .swiper-button-next img,
+.topics .swiper-button-prev img {
+  display: block;
+}
+.topics .swiper-button-next .icon-prev-next,
+.topics .swiper-button-prev .icon-prev-next {
+  opacity: 0;
+  animation: fadeInArrow 3s infinite linear;
+}
+.topics .swiper-button-next .icon-prev-next:nth-child(1),
+.topics .swiper-button-prev .icon-prev-next:nth-child(1) {
+  animation-delay: 0s;
+}
+.topics .swiper-button-next .icon-prev-next:nth-child(2),
+.topics .swiper-button-prev .icon-prev-next:nth-child(2) {
+  animation-delay: 1s;
+}
+.topics .swiper-button-next .icon-prev-next:nth-child(3),
+.topics .swiper-button-prev .icon-prev-next:nth-child(3) {
+  animation-delay: 2s;
+}
+.topics .swiper-button-next {
+  right: 28px;
+  top: initial;
+  left: initial;
+  bottom: 0;
+}
+.topics .swiper-button-prev {
+  right: 175px;
+  top: initial;
+  left: initial;
+  bottom: 0;
+  flex-direction: row-reverse;
 }
 /*# sourceMappingURL=style.css.map */

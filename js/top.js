@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
     speed: 1200,
   });
   const swiperVegetable = new Swiper(".swiper-vegetable", {
-    autoplay: {
-      delay: 8000,
-      disableOnInteraction: false, 
-    },
+    // autoplay: {
+    //   delay: 8000,
+    //   disableOnInteraction: false,
+    // },
     speed: 800,
     loop: true,
     navigation: {
@@ -24,4 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  new Swiper(".swiper-note", {
+    slidesPerView: 2.5,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next", 
+      prevEl: ".swiper-button-prev", 
+    },
+  });
+
 });

@@ -269,78 +269,170 @@
       <h4 class="section-tile">とれたての果物</h4>
     </div>
 
-<section class="toreate-03-contents toreate-02-contents">
+    <section class="toreate-03-contents toreate-02-contents">
+      <div class="toreate-02-contents-inner">
+        <div class="toretate-02-bg">
+          <img class="green-mountain-img" src="<?php echo $global_image_path ?>orenge-bg.png" width="1475" height="463" alt="" loading="lazy">
+          <img class="orenge-wood-left" src="<?php echo $global_image_path ?>orenge-wood-left.png" alt="" class="clover-img" width="156" height="190" loading="lazy">
+          <img class="orenge-wood-right" src="<?php echo $global_image_path ?>orenge-wood-right.png" alt="" class="clover-img" width="159" height="193" loading="lazy">
+        </div>
+        <?php
+            $fruits_class = [
+              "1",
+              "2",
+              "3",
+            ];
+            $fruits_img = [
+              "fruits-01.png",
+              "fruits-02.png",
+              "fruits-03.png",
+            ];
+            $fruits_img_illust = [
+              "kiui.png",
+              "grape.png",
+              "cheyenne.png",
+            ];
+            $fruits_num = [
+              "01",
+              "02",
+              "03",
+            ];
+            $fruits_title = [
+              "<span>キウイフルーツ</span><span>ヘイワード</span>",
+              "<span>巨峰 -紫玉-</span>",
+              "<span>シャインマスカット</span>",
+            ];
+            $fruits_text = [
+              "完全無農薬で栽培しています。<br>一般的なものより甘みがつよく、とれたて農園では追熟せずにとってすぐの状態で出荷をしています。",
+              "とれたての巨峰（紫玉）は、その深い紫色の実が、ジューシーで口の中でとろけるような食感が楽しめます。<br>甘さのピークを迎える季節に、とれたての巨峰の甘美な味わいをご堪能ください。",
+              "とれたてのシャインマスカットの鮮やかな緑色の実は、甘く、ジューシーで爽やかな風味が特徴。一口かじれば、トロピカルな香りが広がります。<br>とれたての新鮮な味をぜひ味わってください。",
+            ];
+          ?>
+          <div class="swiper-vegetable">
+            <div class="swiper-vegetable-wrapper swiper-wrapper">
+              <?php for ($i = 0; $i < 3; $i++): ?>
+                <div class="vegetable-slide-img-box swiper-slide vegetable-slide-img-box-<?php echo $fruits_class[$i]; ?>">
+                  <div class="vegetable-img-contents">
+                      <p class="vegetable-theme">TORETATE<br>FRUITS</p>
+                      <img class="vegetable-slide-img" src="<?php echo $global_image_path . $fruits_img[$i] ?>" width="357" height="541" alt="" loading="lazy">
+                      <img class="vegetable-slide-illust" src="<?php echo $global_image_path . $fruits_img_illust[$i] ?>" alt="" loading="lazy">
+                      <p class="vegetable-slide-num"><span>#</span><?php echo $fruits_num[$i]; ?></p>
+                  </div>
+                  <div class="vegetable-slide-text-box">
+                      <p class="vegetable-slide-sub">とれたての</p>
+                      <h2 class="vegetable-name"><?php echo $fruits_title[$i]; ?></h2>
+                      <p class="vegetable-description"><?php echo $fruits_text[$i]; ?></p>
+                  </div>
+                </div>
+              <?php endfor; ?>
+            </div>
+            <div class="swiper-button-prev">
+              <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev.svg" width="18" height="28" alt="前のスライドへ" loading="lazy">
+              <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev.svg" width="18" height="28" alt="" loading="lazy">
+              <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev.svg" width="18" height="28" alt="" loading="lazy">
+            </div>
+            <div class="swiper-button-next">
+              <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next.svg" width="18" height="28" alt="次のスライドへ" loading="lazy">
+              <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next.svg" width="18" height="28" alt="" loading="lazy">
+              <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next.svg" width="18" height="28" alt="" loading="lazy">
+            </div>
+          </div>
+      </div>
+    </section>
+  </section>
+</div>
+
+<div class="bg-white"></div>
+<div class="toreate-03">
+  <div class="toreate-title">
+    <p class="section-sub-title">TORETATE</p>
+    <span class="about-01-num">04</span>
+  </div>
+  <h4 class="section-tile">とれたての贈りもの</h4>
+</div>
+<section class="toreate-04-contents toreate-02-contents">
   <div class="toreate-02-contents-inner">
     <div class="toretate-02-bg">
-      <img class="green-mountain-img" src="<?php echo $global_image_path ?>orenge-bg.png" width="1475" height="463" alt="" loading="lazy">
-      <img class="orenge-wood-left" src="<?php echo $global_image_path ?>orenge-wood-left.png" alt="" class="clover-img" width="156" height="190" loading="lazy">
-      <img class="orenge-wood-right" src="<?php echo $global_image_path ?>orenge-wood-right.png" alt="" class="clover-img" width="159" height="193" loading="lazy">
+      <img class="green-mountain-img" src="<?php echo $global_image_path ?>sky-bg.png" width="1475" height="463" alt="" loading="lazy">
+      <img class="sky-img" src="<?php echo $global_image_path ?>sky-bird.png" alt="" width="169" height="89" loading="lazy">
     </div>
     <?php
-        $fruits_class = [
+        $gift_class = [
           "1",
-          "2",
-          "3",
         ];
-        $fruits_img = [
-          "fruits-01.png",
-          "fruits-02.png",
-          "fruits-03.png",
+        $gift_img = [
+          "gift-01.png",
         ];
-        $fruits_img_illust = [
-          "kiui.png",
-          "grape.png",
-          "cheyenne.png",
+        $gift_img_illust = [
+          "grape-color.png",
         ];
-        $fruits_num = [
+        $gift_num = [
           "01",
-          "02",
-          "03",
         ];
-        $fruits_title = [
-          "<span>キウイフルーツ</span><span>ヘイワード</span>",
-          "<span>巨峰 -紫玉-</span>",
-          "<span>シャインマスカット</span>",
+        $gift_title = [
+          "<span>ジャム</span>",
         ];
-        $fruits_text = [
-          "完全無農薬で栽培しています。<br>一般的なものより甘みがつよく、とれたて農園では追熟せずにとってすぐの状態で出荷をしています。",
-          "とれたての巨峰（紫玉）は、その深い紫色の実が、ジューシーで口の中でとろけるような食感が楽しめます。<br>甘さのピークを迎える季節に、とれたての巨峰の甘美な味わいをご堪能ください。",
-          "とれたてのシャインマスカットの鮮やかな緑色の実は、甘く、ジューシーで爽やかな風味が特徴。一口かじれば、トロピカルな香りが広がります。<br>とれたての新鮮な味をぜひ味わってください。",
+        $gift_text = [
+          "テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■",
         ];
       ?>
       <div class="swiper-vegetable">
         <div class="swiper-vegetable-wrapper swiper-wrapper">
-          <?php for ($i = 0; $i < 3; $i++): ?>
-            <div class="vegetable-slide-img-box swiper-slide vegetable-slide-img-box-<?php echo $fruits_class[$i]; ?>">
+          <?php for ($i = 0; $i < 1; $i++): ?>
+            <div class="vegetable-slide-img-box swiper-slide vegetable-slide-img-box-<?php echo $gift_class[$i]; ?>">
               <div class="vegetable-img-contents">
-                  <p class="vegetable-theme">TORETATE<br>FRUITS</p>
-                  <img class="vegetable-slide-img" src="<?php echo $global_image_path . $fruits_img[$i] ?>" width="357" height="541" alt="" loading="lazy">
-                  <img class="vegetable-slide-illust" src="<?php echo $global_image_path . $fruits_img_illust[$i] ?>" alt="" loading="lazy">
-                  <p class="vegetable-slide-num"><span>#</span><?php echo $fruits_num[$i]; ?></p>
+                  <p class="vegetable-theme">TORETATE<br>GIFTS</p>
+                  <img class="vegetable-slide-img" src="<?php echo $global_image_path . $gift_img[$i] ?>" width="357" height="541" alt="" loading="lazy">
+                  <img class="vegetable-slide-illust" src="<?php echo $global_image_path . $gift_img_illust[$i] ?>" alt="" loading="lazy">
+                  <p class="vegetable-slide-num"><span>#</span><?php echo $gift_num[$i]; ?></p>
               </div>
               <div class="vegetable-slide-text-box">
                   <p class="vegetable-slide-sub">とれたての</p>
-                  <h2 class="vegetable-name"><?php echo $fruits_title[$i]; ?></h2>
-                  <p class="vegetable-description"><?php echo $fruits_text[$i]; ?></p>
+                  <h2 class="vegetable-name"><?php echo $gift_title[$i]; ?></h2>
+                  <p class="vegetable-description"><?php echo $gift_text[$i]; ?></p>
               </div>
             </div>
           <?php endfor; ?>
         </div>
         <div class="swiper-button-prev">
-          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev.svg" width="18" height="28" alt="前のスライドへ" loading="lazy">
-          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev.svg" width="18" height="28" alt="" loading="lazy">
-          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev.svg" width="18" height="28" alt="" loading="lazy">
+          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev-black.svg" width="18" height="28" alt="前のスライドへ" loading="lazy">
+          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev-black.svg" width="18" height="28" alt="" loading="lazy">
+          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev-black.svg" width="18" height="28" alt="" loading="lazy">
         </div>
         <div class="swiper-button-next">
-          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next.svg" width="18" height="28" alt="次のスライドへ" loading="lazy">
-          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next.svg" width="18" height="28" alt="" loading="lazy">
-          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next.svg" width="18" height="28" alt="" loading="lazy">
+          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next-black.svg" width="18" height="28" alt="次のスライドへ" loading="lazy">
+          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next-black.svg" width="18" height="28" alt="" loading="lazy">
+          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next-black.svg" width="18" height="28" alt="" loading="lazy">
         </div>
       </div>
   </div>
-</section>
-
+  <section class="topics">
+    <div class="topic-inner">
+      <div class="toreate-03">
+        <div class="toreate-title">
+          <p class="section-sub-title">TORETATE</p>
+          <span class="about-01-num">TOPICS</span>
+        </div>
+      </div>
+      <div class="note-contents">
+        <div class="swiper-note">
+          <div class="swiper-note-wrapper swiper-wrapper">
+          <?php note_feed_display('https://note.com/toretatefarm/rss', '5' ,'150'); ?>
+          </div>
+        <div class="swiper-button-prev">
+          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev-black.svg" width="18" height="28" alt="前のスライドへ" loading="lazy">
+          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev-black.svg" width="18" height="28" alt="" loading="lazy">
+          <img class="icon-prev icon-prev-next" src="<?php echo $global_image_path ?>icon-prev-black.svg" width="18" height="28" alt="" loading="lazy">
+        </div>
+        <div class="swiper-button-next">
+          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next-black.svg" width="18" height="28" alt="次のスライドへ" loading="lazy">
+          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next-black.svg" width="18" height="28" alt="" loading="lazy">
+          <img class="icon-next icon-prev-next" src="<?php echo $global_image_path ?>icon-next-black.svg" width="18" height="28" alt="" loading="lazy">
+        </div>
+        </div>
+      </div>
+    </div>
   </section>
-</div>
+</section>
 
 <?php get_footer(); ?>
