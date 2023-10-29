@@ -43,12 +43,12 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="fv-title-area">
-          <p class="fv-title-sub">Do you know?</p>
+          <p class="fv-title-sub opacity-fade">Do you know?</p>
           <h2 class="fv-title">
-            <span>知ってる？</span>
-            <span>とれたてのホントの味</span>
+            <span class="right-fade">知ってる？</span>
+            <span class="right-fade">とれたてのホントの味</span>
           </h2>
-          <p class="fv-text">Freshly harvested vegetables.<br>Freshly picked fruit.<br>The blessings and deliciousness of nature.</p>
+          <p class="fv-text opacity-fade">Freshly harvested vegetables.<br>Freshly picked fruit.<br>The blessings and deliciousness of nature.</p>
         </div>
       </div>
     </div>
@@ -64,17 +64,17 @@
         <img class="pink-mountain-img" src="<?php echo $global_image_path ?>pink.png" width="1458" height="446" alt="" loading="lazy">
         <div class="about-contents-bg">
           <div class="about-title-area">
-            <p class="about-title-sub">Do you know?</p>
+            <p class="about-title-sub opacity-fade">Do you know?</p>
             <div class="about-title-box">
-              <h2 class="about-title">知ってる？<br>とれたてのホントの味</h2>
-              <img class="about-ha about-ha-01" src="<?php echo $global_image_path ?>ha-01.svg" width="65" height="73" alt="" loading="lazy">
-              <img class="about-ha about-ha-02" src="<?php echo $global_image_path ?>ha-02.svg" width="65" height="73" alt="" loading="lazy">
+              <h2 class="about-title fade-up">知ってる？<br>とれたてのホントの味</h2>
+              <img class="about-ha about-ha-01 opacity-fade" src="<?php echo $global_image_path ?>ha-01.svg" width="65" height="73" alt="" loading="lazy">
+              <img class="about-ha about-ha-02 opacity-fade" src="<?php echo $global_image_path ?>ha-02.svg" width="65" height="73" alt="" loading="lazy">
             </div>
-            <p class="about-text">Freshly harvested vegetables.<br>Freshly picked fruit.<br>The blessings and deliciousness of nature.</p>
+            <p class="about-text opacity-fade">Freshly harvested vegetables.<br>Freshly picked fruit.<br>The blessings and deliciousness of nature.</p>
           </div>
           <div class="about-bottom-img">
-            <img class="about-wood about-wood-01" src="<?php echo $global_image_path ?>wood-01.png" width="143" height="215" alt="" loading="lazy">
-            <img class="about-wood about-wood-02" src="<?php echo $global_image_path ?>wood-02.png" width="172" height="210" alt="" loading="lazy">
+            <img class="about-wood about-wood-01 fade-up-img" src="<?php echo $global_image_path ?>wood-01.png" width="143" height="215" alt="" loading="lazy">
+            <img class="about-wood about-wood-02 fade-up-img" src="<?php echo $global_image_path ?>wood-02.png" width="172" height="210" alt="" loading="lazy">
           </div>
         </div>
       </div>
@@ -82,23 +82,23 @@
     <div class="about-01">
       <div class="about-01-contents">
         <div class="about-01-img-box">
-          <img class="map-img" src="<?php echo $global_image_path ?>japan.png" width="738" height="545" alt="" loading="lazy">
+          <img class="map-img fade-up" src="<?php echo $global_image_path ?>japan.png" width="738" height="545" alt="" loading="lazy">
           <h3>BASED IN</h3>
           <p>SHOWACHO YAMANASHI JAPAN</p>
         </div>
         <div class="about-01-text-box">
           <div class="about-01-num-box">
-            <p class="section-sub-title">TORETATE</p>
-            <span class="about-01-num">01</span>
+            <p class="section-sub-title opacity-fade">TORETATE</p>
+            <span class="about-01-num fade-up-img">01</span>
           </div>
-          <div class="about-01-text-wrap">
+          <div class="about-01-text-wrap fade-up">
             <h4 class="section-tile">とれたて農園とは？</h4>
             <p class="about-01-text">山梨県中巨摩郡昭和町にある、「とれたてに」こだわり、鮮度と素材の旨みを最大限に味わっていただくための野菜・果物づくりを行っている農園。<br>
   農業は命と未来を作ること。<br>
   当社の強みである有機農耕法で、作物と対話し、成長に合わせてじっくりと寄り添いながら、愛情と手間暇を惜しまずかけて育てています。
   ・・・</p>
           </div>
-          <div class="about-01-link"><a href="<?php echo esc_url(home_url('/about')); ?>">VIEW MORE</a></div>
+          <div class="about-01-link fade-up"><a href="<?php echo esc_url(home_url('/about')); ?>">VIEW MORE</a></div>
         </div>
       </div>
       <?php
@@ -177,10 +177,10 @@
 <div>
 <div class="toreate-02">
   <div class="toreate-title">
-    <p class="section-sub-title">TORETATE</p>
-    <span class="about-01-num">02</span>
+    <p class="section-sub-title opacity-fade">TORETATE</p>
+    <span class="about-01-num fade-up-img">02</span>
   </div>
-  <h4 class="section-tile">とれたての野菜</h4>
+  <h4 class="section-tile fade-up">とれたての野菜</h4>
 </div>
 <section class="toreate-02-contents">
   <div class="toreate-02-contents-inner">
@@ -271,10 +271,10 @@
     <div class="bg-white"></div>
     <div class="toreate-03">
       <div class="toreate-title">
-        <p class="section-sub-title">TORETATE</p>
-        <span class="about-01-num">03</span>
+        <p class="section-sub-title opacity-fade">TORETATE</p>
+        <span class="about-01-num fade-up-img">03</span>
       </div>
-      <h4 class="section-tile">とれたての果物</h4>
+      <h4 class="section-tile fade-up">とれたての果物</h4>
     </div>
 
     <section class="toreate-03-contents toreate-02-contents">
@@ -353,10 +353,10 @@
 <div class="bg-white"></div>
 <div class="toreate-03">
   <div class="toreate-title">
-    <p class="section-sub-title">TORETATE</p>
-    <span class="about-01-num">04</span>
+    <p class="section-sub-title opacity-fade">TORETATE</p>
+    <span class="about-01-num fade-up-img">04</span>
   </div>
-  <h4 class="section-tile">とれたての贈りもの</h4>
+  <h4 class="section-tile fade-up">とれたての贈りもの</h4>
 </div>
 <section class="toreate-04-contents toreate-02-contents">
   <div class="toreate-02-contents-inner">
@@ -418,8 +418,8 @@
     <div class="topic-inner">
       <div class="toreate-03">
         <div class="toreate-title">
-          <p class="section-sub-title">TORETATE</p>
-          <span class="about-01-num">TOPICS</span>
+          <p class="section-sub-title opacity-fade">TORETATE</p>
+          <span class="about-01-num fade-up-img">TOPICS</span>
         </div>
       </div>
       <div class="note-contents">

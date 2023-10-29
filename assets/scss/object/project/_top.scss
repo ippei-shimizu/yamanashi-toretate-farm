@@ -1,5 +1,45 @@
 @use "../../foundation/base" as *;
 
+/* scroll animation
+   ----------------------------------------------------------------- */
+.right-fade {
+  transform-origin: right center;
+  -webkit-transform-origin: right center;
+  transform: scale3d(0, 1, 1) translate(0%, 0%) rotate(0deg);
+  transition: all 1.6s cubic-bezier(0.885, 0.02, 0.165, 0.995);
+  &.is-visit {
+    transform: scale3d(1, 1, 1) translate(0%, 0%) rotate(0deg);
+  }
+}
+.opacity-fade {
+  opacity: 0;
+  &.is-visit {
+    opacity: 1;
+  }
+}
+.fade-up {
+  opacity: 0;
+  transform: translate(0, 3vw);
+  transition: all 1s ease-out;
+  &.is-visit {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.fade-up-img {
+  transform: translate(0, 224px);
+  &.is-visit {
+    transform: translate(0, 0);
+  }
+}
+.fade-up-num {
+  transform: translate(0, 100px);
+  &.is-visit {
+    transform: translate(0, 0);
+  }
+}
+
+
 /* fv
    ----------------------------------------------------------------- */
 .fv {
@@ -70,6 +110,7 @@ fv-slide-img-box {
   top: 16px;
   right: -146px;
   transform: rotate(-11.048deg);
+  transition: opacity 1.6s ease 1.6s;
 }
 .fv-title {
   span {
@@ -87,6 +128,7 @@ fv-slide-img-box {
     padding: 8px 24px;
   }
 }
+
 .fv-text {
   color: #fff;
   text-align: right;
@@ -97,6 +139,7 @@ fv-slide-img-box {
   line-height: normal;
   letter-spacing: 4.2px;
   margin-top: 28px;
+  transition: opacity 1.6s ease 1.6s;
 }
 .fv {
   .swiper-pagination {
@@ -212,6 +255,7 @@ fv-slide-img-box {
   letter-spacing: 2.643px;
   transform: rotate(-11.048deg);
   width: fit-content;
+  transition: opacity 1.6s ease 1s;
 }
 .about-title-box {
   position: relative;
@@ -234,10 +278,12 @@ fv-slide-img-box {
 .about-ha-01 {
   right: -52px;
   top: 0;
+  transition: opacity 1.6s ease 2.4s;
 }
 .about-ha-02 {
   right: -118px;
   bottom: -8px;
+  transition: opacity 1.6s ease 2.8s;
 }
 .about-text {
   color: #fff;
@@ -248,15 +294,23 @@ fv-slide-img-box {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 4.2px;
+  transition: opacity 1.6s ease 1.4s;
 }
 .about-bottom-img {
   width: fit-content;
   margin-left: 70px;
   display: flex;
   column-gap: 11px;
+  overflow: hidden;
   img {
     display: block;
   }
+}
+.about-wood-01 {
+  transition: 1.6s ease .4s;
+}
+.about-wood-02 {
+  transition: 1.6s ease .8s;
 }
 .about-01 {
   padding-top: 360px;
@@ -271,6 +325,12 @@ fv-slide-img-box {
   justify-content: center;
   column-gap: 7%;
   padding: 0 129px 228px 96px;
+}
+.map-img {
+  transition: opacity 1.6s ease 2.4s, transform 1.6s ease 2.4s;
+}
+.about-01-text-wrap {
+  transition: opacity 1.6s ease 1.4s, transform 1.6s ease 1.4s;
 }
 .about-01-img-box {
   h3 {
@@ -302,6 +362,7 @@ fv-slide-img-box {
 }
 .about-01-num-box {
   margin-bottom: 62px;
+  overflow: hidden;
 }
 .section-sub-title {
   color: $color-text;
@@ -312,6 +373,7 @@ fv-slide-img-box {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 3.57px;
+  transition: opacity 1.6s ease 1s;
 }
 .about-01-num {
   color: $color-text;
@@ -325,6 +387,7 @@ fv-slide-img-box {
   margin: 0 auto;
   display: block;
   border-bottom: 3px solid $color-text;
+  transition: transform 1.6s ease;
 }
 .section-tile {
   color: $color-text;
@@ -336,6 +399,7 @@ fv-slide-img-box {
   line-height: normal;
   letter-spacing: 3.2px;
   margin-top: 44px;
+  transition: opacity 1.6s ease 1.4s, transform 1.6s 1.4s;
 }
 .about-01-text {
   color: $color-text;
@@ -355,6 +419,7 @@ fv-slide-img-box {
   align-items: center;
   justify-content: center;
   margin: 70px auto 0;
+  transition: opacity 1.6s ease 1.4s, transform 1.6s ease 1.4s;
   a {
     display: block;
     color: $color-text;
@@ -451,6 +516,9 @@ fv-slide-img-box {
   100% {
     transform: translateX(-100%);
   }
+}
+.toreate-title {
+  overflow: hidden;
 }
 .toreate-02 {
   background-color: #fff;

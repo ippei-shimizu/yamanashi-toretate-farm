@@ -21,7 +21,28 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 1400);
     },
   });
-  gsap.to(fvImgLeft, { delay: 6.8, duration: 1, x: 0 });
+  gsap.to(fvImgLeft, { delay: 6.8, duration: 1.6, x: 0 });
+
+  // scroll animation
+  const targetClasses = [
+    ".right-fade",
+    ".opacity-fade",
+    ".fade-up",
+    ".fade-up-img",
+    ".fade-up-num",
+  ];
+
+  targetClasses.forEach((targetClass) => {
+    gsap.utils.toArray(targetClass).forEach((elem) => {
+      ScrollTrigger.create({
+        trigger: elem,
+        start: "top bottom",
+        onEnter: () => elem.classList.add("is-visit"),
+        once: true,
+      });
+    });
+  });
+  // end
 
   const swiper = new Swiper(".swiper-container", {
     effect: "fade",
