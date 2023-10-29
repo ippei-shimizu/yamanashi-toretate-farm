@@ -12,4 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
     speed: 1200,
   });
+  const swiperVegetable = new Swiper(".swiper-vegetable", {
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false, 
+    },
+    speed: 800,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });
