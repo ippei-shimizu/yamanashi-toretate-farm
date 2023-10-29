@@ -1,3 +1,9 @@
+<div id="loading" class="loading">
+  <div class="loading-icon-box">
+    
+  </div>
+</div>
+
 <?php get_header(); ?>
 
 <div>

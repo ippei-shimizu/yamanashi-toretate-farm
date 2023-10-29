@@ -26,12 +26,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   new Swiper(".swiper-note", {
-    slidesPerView: 2.5,
-    spaceBetween: 20,
     navigation: {
-      nextEl: ".swiper-button-next", 
-      prevEl: ".swiper-button-prev", 
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      breakpoints: {
+        100: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+      },
+      800: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
     },
   });
-
 });

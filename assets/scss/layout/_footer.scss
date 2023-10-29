@@ -190,6 +190,13 @@
   letter-spacing: 1.4px;
 }
 
+@include media(min1980) {
+  .footer-grid {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
 @include media(bp1200) {
   .footer-grid {
     column-gap: 60px;
