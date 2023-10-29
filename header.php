@@ -15,7 +15,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body style="overflow: hidden;">
   <header class="header">
     <div class="header-inner">
     <?php if (is_front_page()) : ?>
