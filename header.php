@@ -34,7 +34,10 @@
           <img class="loop_shape" src="<?php echo $global_image_path; ?>nav-bg-line.svg" alt="">
         </span>
       </div>
-        <nav class="header-nav">
+        <nav id="headerNav" class="header-nav">
+          <a class="logo-sp" href="<?php echo esc_url(home_url('/')); ?>">
+            <img src="<?php echo $global_image_path; ?>logo.svg" alt="山梨とれたて農園" width="49" height="35">
+          </a>
           <ul class="header-nav-box">
             <?php
             $titles = ["ABOUT", "CONTACT", "TOPICS", "INSTAGRAM"];
@@ -51,13 +54,24 @@
                 </li>
             <?php endforeach; ?>
           </ul>
+          <a class="shop-link-sp" href="<?php echo esc_url(home_url('/contact')); ?>">
+            <img src="<?php echo $global_image_path; ?>icon-shop.svg" alt="オンラインショップ" width="50" height="50">
+          </a>
+          <p class="shop-link-text-sp">ONLINE STORE</p>
+          <p class="coming-soon-sp">COMING SOON...</p>
+          <img src="<?php echo $global_image_path; ?>sp-nav-bg.png" alt="" class="sp-nav-bg" width="253" height="276">
         </nav>
         <a class="logo" href="<?php echo esc_url(home_url('/')); ?>">
           <img src="<?php echo $global_image_path; ?>logo.svg" alt="山梨とれたて農園" width="49" height="35">
         </a>
         <a class="shop-link" href="<?php echo esc_url(home_url('/contact')); ?>">
           <img src="<?php echo $global_image_path; ?>icon-shop.svg" alt="オンラインショップ" width="76" height="76">
-        </a>  
+        </a>
+        <div id="spNavBtn" class="sp-nav-btn">
+          <span class="sp-nav-bar"></span>
+          <span class="sp-nav-bar"></span>
+        </div>
     </div>
     </div>
   </header>
+  <div id="overlay" class="over-lay"></div>
