@@ -15,7 +15,7 @@
         <p class="footer-info">
         〒409-3864<br>山梨県中巨摩郡昭和町押越2097
         </p>
-        <a class="footer-google-map"  href="https://www.google.co.jp/maps/place/JA+Yamanashimirai+Kakutetate+Land+Yamashiro/@35.6289961,138.5760349,17z/data=!3m1!4b1!4m6!3m5!1s0x601bfa17fe803815:0xf7d144139fa7c274!8m2!3d35.6289918!4d138.5786098!16s%2Fg%2F1vxcwhcq?entry=ttu" target="_blank" rel="noopener noreferrer">
+        <a class="footer-google-map"  href="https://www.google.co.jp/maps/place/2097+Oshikoshi,+Showa,+Nakakoma+District,+Yamanashi+409-3864/@35.6275334,138.5412856,18z/data=!3m1!4b1!4m6!3m5!1s0x601bf73a32b313df:0x9c9deab15b25f18d!8m2!3d35.627532!4d138.5421155!16s%2Fg%2F11gv06hj1y?entry=ttu" target="_blank" rel="noopener noreferrer">
           <p class="google-map-text">Google map</p>
         </a>
         <a href="<?php echo esc_url(home_url('/')); ?>/contact" class="contact-link">お問い合わせ</a>
