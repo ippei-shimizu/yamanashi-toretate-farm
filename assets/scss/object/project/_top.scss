@@ -11,9 +11,24 @@
     transform: scale3d(1, 1, 1) translate(0%, 0%) rotate(0deg);
   }
 }
+.right-fade-sp {
+  transform-origin: right center;
+  -webkit-transform-origin: right center;
+  transform: scale3d(0, 1, 1) translate(0%, 0%) rotate(0deg);
+  transition: all 1s cubic-bezier(0.885, 0.02, 0.165, 0.995);
+  &.is-visit-sp {
+    transform: scale3d(1, 1, 1) translate(0%, 0%) rotate(0deg);
+  }
+}
 .opacity-fade {
   opacity: 0;
   &.is-visit {
+    opacity: 1;
+  }
+}
+.opacity-fade-sp {
+  opacity: 0;
+  &.is-visit-sp {
     opacity: 1;
   }
 }
@@ -38,7 +53,6 @@
     transform: translate(0, 0);
   }
 }
-
 
 /* fv
    ----------------------------------------------------------------- */
@@ -110,7 +124,7 @@ fv-slide-img-box {
   top: 16px;
   right: -146px;
   transform: rotate(-11.048deg);
-  transition: opacity 1.6s ease 1.6s;
+  transition: opacity 1.6s ease .8s;
 }
 .fv-title {
   span {
@@ -139,7 +153,7 @@ fv-slide-img-box {
   line-height: normal;
   letter-spacing: 4.2px;
   margin-top: 28px;
-  transition: opacity 1.6s ease 1.6s;
+  transition: opacity 1.6s ease 1.2s;
 }
 .fv {
   .swiper-pagination {
@@ -307,10 +321,10 @@ fv-slide-img-box {
   }
 }
 .about-wood-01 {
-  transition: 1.6s ease .4s;
+  transition: 1.6s ease 0.4s;
 }
 .about-wood-02 {
-  transition: 1.6s ease .8s;
+  transition: 1.6s ease 0.8s;
 }
 .about-01 {
   padding-top: 360px;

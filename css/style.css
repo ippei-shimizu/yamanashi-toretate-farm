@@ -270,7 +270,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 137px;
+    padding-top: 27%;
     padding-right: 41px;
     transform: translateX(500px);
     opacity: 0;
@@ -281,7 +281,7 @@ img {
     transform: translateX(0px);
   }
   .header-nav-box {
-    margin: 34px 0 72px;
+    margin: 34px 0 30%;
     row-gap: 21px;
   }
   .sp-nav-btn {
@@ -340,7 +340,8 @@ img {
     margin-right: 12px;
   }
   .sp-nav-bg {
-    width: 204px;
+    width: auto;
+    height: 56vw;
     display: block;
     position: absolute;
     right: 0;
@@ -706,10 +707,27 @@ img {
   transform: scale3d(1, 1, 1) translate(0%, 0%) rotate(0deg);
 }
 
+.right-fade-sp {
+  transform-origin: right center;
+  -webkit-transform-origin: right center;
+  transform: scale3d(0, 1, 1) translate(0%, 0%) rotate(0deg);
+  transition: all 1s cubic-bezier(0.885, 0.02, 0.165, 0.995);
+}
+.right-fade-sp.is-visit-sp {
+  transform: scale3d(1, 1, 1) translate(0%, 0%) rotate(0deg);
+}
+
 .opacity-fade {
   opacity: 0;
 }
 .opacity-fade.is-visit {
+  opacity: 1;
+}
+
+.opacity-fade-sp {
+  opacity: 0;
+}
+.opacity-fade-sp.is-visit-sp {
   opacity: 1;
 }
 
@@ -818,7 +836,7 @@ fv-slide-img-box {
   top: 16px;
   right: -146px;
   transform: rotate(-11.048deg);
-  transition: opacity 1.6s ease 1.6s;
+  transition: opacity 1.6s ease 0.8s;
 }
 
 .fv-title span {
@@ -846,7 +864,7 @@ fv-slide-img-box {
   line-height: normal;
   letter-spacing: 4.2px;
   margin-top: 28px;
-  transition: opacity 1.6s ease 1.6s;
+  transition: opacity 1.6s ease 1.2s;
 }
 
 .fv .swiper-pagination {

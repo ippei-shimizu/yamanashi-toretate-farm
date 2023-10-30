@@ -209,7 +209,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 137px;
+    padding-top: 27%;
     padding-right: 41px;
     transform: translateX(500px);
     opacity: 0;
@@ -220,7 +220,7 @@
     }
   }
   .header-nav-box {
-    margin: 34px 0 72px;
+    margin: 34px 0 30%;
     row-gap: 21px;
   }
   .sp-nav-btn {
@@ -283,7 +283,8 @@
     margin-right: 12px;
   }
   .sp-nav-bg {
-    width: 204px;
+    width: auto;
+    height: 56vw;
     display: block;
     position: absolute;
     right: 0;

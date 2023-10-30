@@ -88,4 +88,41 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  function adjustClassBasedOnWidth() {
+    const elementsToAdjust = [
+        { selector: '.fv-title-sub', pcClass: 'opacity-fade', spClass: 'opacity-fade-sp' },
+        { selector: '.fv-title-span', pcClass: 'right-fade', spClass: 'right-fade-sp' },
+        { selector: '.fv-text', pcClass: 'opacity-fade', spClass: 'opacity-fade-sp' },
+    ];
+
+    elementsToAdjust.forEach(item => {
+        const elements = document.querySelectorAll(item.selector);
+        elements.forEach(element => {
+            if (window.innerWidth > 800) {
+                element.classList.add(item.pcClass);
+                element.classList.remove(item.spClass);
+            } else {
+                element.classList.add(item.spClass);
+                element.classList.remove(item.pcClass);
+            }
+        });
+    });
+}
+
+function addVisitSpClassAfterDelay() {
+  if (window.innerWidth <= 800) {
+      gsap.delayedCall(7.2, () => {
+          document.querySelectorAll('.opacity-fade-sp, .right-fade-sp').forEach(el => {
+              el.classList.add('is-visit-sp');
+          });
+      });
+  }
+}
+
+adjustClassBasedOnWidth();
+addVisitSpClassAfterDelay();
+window.addEventListener('resize', adjustClassBasedOnWidth);
+window.addEventListener('resize', addVisitSpClassAfterDelay);
+
 });

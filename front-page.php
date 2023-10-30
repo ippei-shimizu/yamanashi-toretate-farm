@@ -43,12 +43,12 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="fv-title-area">
-          <p class="fv-title-sub opacity-fade">Do you know?</p>
+          <p class="fv-title-sub opacity-fade opacity-fade-sp">Do you know?</p>
           <h2 class="fv-title">
-            <span class="right-fade">知ってる？</span>
-            <span class="right-fade">とれたてのホントの味</span>
+            <span class="right-fade right-fade-sp fv-title-span">知ってる？</span>
+            <span class="right-fade right-fade-sp fv-title-span">とれたてのホントの味</span>
           </h2>
-          <p class="fv-text opacity-fade">Freshly harvested vegetables.<br>Freshly picked fruit.<br>The blessings and deliciousness of nature.</p>
+          <p class="fv-text opacity-fade opacity-fade-sp">Freshly harvested vegetables.<br>Freshly picked fruit.<br>The blessings and deliciousness of nature.</p>
         </div>
       </div>
     </div>
