@@ -11,7 +11,7 @@ function my_theme_styles_and_scripts() {
       $version = filemtime(get_template_directory() . '/js/top.js');
       wp_enqueue_script('top-script', get_template_directory_uri() . '/js/top.js', array(), $version, true);
     }
-    if (is_page("about")) {
+    if (is_page("about") || is_page("contact")) {
       $version = filemtime(get_template_directory() . '/js/about.js');
       wp_enqueue_script('top-script', get_template_directory_uri() . '/js/about.js', array(), $version, true);
     }
@@ -28,6 +28,8 @@ add_action('admin_enqueue_scripts', 'my_admin_theme_style');
 
 //アイキャッチ画像を有効化//
 add_theme_support('post-thumbnails');
+
+add_filter( 'widget_text', 'do_shortcode' );
 
 // 画像パス変数
 function set_global_variables() {

@@ -2833,4 +2833,485 @@ fv-slide-img-box {
     margin-top: -32px;
   }
 }
+.contact-fv .about-fv-title {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.contact-fv-sub {
+  display: block;
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-Light";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.6px;
+}
+
+.contact-msg {
+  margin: 172px 200px 256px;
+}
+
+.contact-msg-text {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.products-send-wrap {
+  margin: 163px auto 236px;
+  max-width: 745px;
+}
+
+.products-title-box {
+  display: grid;
+  grid-template-columns: auto 274px auto;
+  align-items: center;
+}
+
+.products-title {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  border: 1px solid #3e3a39;
+  padding: 8px 0;
+}
+
+.products-border {
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.products-title-sub {
+  margin: 32px auto 14px;
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.products-title-sub span {
+  text-decoration: underline;
+}
+
+.products-text {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-Light";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+.products-table {
+  padding: 100px 114px 94px;
+  border: 1px solid #3e3a39;
+  max-width: 490px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-item {
+  text-align: center;
+}
+
+.products-name {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  margin-bottom: 7px;
+}
+
+.products-price {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-Light";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+.item-border {
+  height: 1px;
+  background-color: #d9d9d9;
+  margin: 49px 0;
+}
+
+.products-description {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-Light";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-top: 49px;
+}
+
+.form__box {
+  max-width: 746px;
+  margin: 0 auto 495px;
+}
+
+.form__table {
+  width: 100%;
+}
+.form__table th {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.form__table th p {
+  color: #3e3a39;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.form__table th .required {
+  color: #fbc6d0;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  vertical-align: super;
+  padding-left: 6px;
+}
+.form__table td {
+  display: block;
+}
+
+.select-contact th {
+  margin-bottom: 29px;
+  margin-top: 0;
+}
+.select-contact td {
+  margin-bottom: 46px;
+}
+.select-contact td .wpcf7-list-item-label {
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+.select-contact td .wpcf7-list-item {
+  margin-left: 0;
+  margin-right: 36px;
+}
+.select-contact td .wpcf7-radio input[type=radio] {
+  display: none;
+}
+.select-contact td .wpcf7-radio label {
+  position: relative;
+  padding-left: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.select-contact td .wpcf7-radio label::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #3e3a39;
+  background-color: #fff;
+}
+@media screen and (max-width: 800px) {
+  .select-contact td .wpcf7-radio label::before {
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 4px;
+  }
+}
+.select-contact td .wpcf7-radio input[type=radio]:checked + .wpcf7-list-item-label::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0px;
+  width: 22px;
+  height: 22px;
+  background-color: #3e3a39;
+}
+@media screen and (max-width: 800px) {
+  .select-contact td .wpcf7-radio input[type=radio]:checked + .wpcf7-list-item-label::after {
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 4px;
+  }
+}
+
+.contact-input .wpcf7-form-control-wrap {
+  width: 100%;
+}
+.contact-input .wpcf7-form-control-wrap input {
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.4705882353);
+  padding: 30px 24px;
+  font-size: 20px;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  color: #3e3a39;
+}
+.contact-input .wpcf7-form-control-wrap input::placeholder {
+  color: #c1c1c1;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.contact-input .wpcf7-form-control-wrap textarea {
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.4705882353);
+  padding: 30px 24px;
+  font-size: 20px;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  color: #3e3a39;
+}
+.contact-input .wpcf7-form-control-wrap textarea::placeholder {
+  color: #c1c1c1;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.contact-input .wpcf7-form-control-wrap textarea#info {
+  height: 136px;
+}
+
+.td-required {
+  display: block;
+  color: #fbc6d0;
+  font-family: "A-OTF-GothicMB101Pro-Light";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin: 20px 0 16px 0;
+}
+
+.privacy-policy {
+  height: 512px;
+  overflow: scroll;
+  padding: 60px 45px;
+  border: 1px solid #3e3a39;
+  margin-top: 231px;
+  margin-bottom: 234px;
+}
+.privacy-policy p {
+  margin-bottom: 60px;
+  color: #3e3a39;
+  text-align: justify;
+  font-family: "A-OTF-GothicMB101Pro-Light";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1.6px;
+}
+.privacy-policy p:last-child {
+  margin-bottom: 0;
+}
+
+.confirm__box p {
+  width: 367px;
+  height: 65px;
+  color: #3e3a39;
+  text-align: center;
+  font-family: "A-OTF-GothicMB101Pro-DeBold";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  border: 1px solid #3e3a39;
+}
+.confirm__box p input {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1025px) {
+  .contact-msg {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .form__box {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-fv {
+    margin-bottom: 140px;
+  }
+  .contact-msg {
+    margin-top: 252px;
+    margin-bottom: 200px;
+  }
+  .contact-msg-text {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+  }
+  .products-send-wrap {
+    margin: 120px auto;
+  }
+  .products-title-box {
+    grid-template-columns: auto 134px auto;
+  }
+  .products-title {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+  }
+  .products-title-sub {
+    font-size: 11px;
+    letter-spacing: 1.1px;
+    margin: 20px auto 17px;
+  }
+  .products-text {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .products-table {
+    margin: 0 42px;
+    padding: 63px 18px 54px;
+  }
+  .products-name {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    margin-bottom: 5px;
+  }
+  .products-price {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .item-border {
+    margin: 30px auto;
+    width: 56%;
+  }
+  .products-description {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 31px;
+  }
+  .form__table th {
+    margin-top: 19px;
+  }
+  .form__table th p {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+  .form__table th .required {
+    font-size: 10px;
+    letter-spacing: 1px;
+    position: relative;
+    top: 1px;
+    left: -3px;
+  }
+}
+.select-contact th {
+  margin-bottom: 7px;
+}
+.select-contact td {
+  margin-bottom: 0px;
+}
+.select-contact td .wpcf7-list-item-label {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+.select-contact td .wpcf7-list-item {
+  margin-right: 10px;
+}
+
+.contact-input .wpcf7-form-control-wrap input {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  padding: 19px 15px;
+}
+.contact-input .wpcf7-form-control-wrap input::placeholder {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+.contact-input .wpcf7-form-control-wrap textarea {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  padding: 19px 15px;
+}
+.contact-input .wpcf7-form-control-wrap textarea::placeholder {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+.contact-input .wpcf7-form-control-wrap textarea#info {
+  height: 85px;
+}
+
+.td-required {
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-top: 19px;
+}
+
+.privacy-policy {
+  margin: 120px auto;
+  padding: 30px 26px;
+  height: 244px;
+}
+.privacy-policy p {
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+
+.confirm__box p {
+  max-width: 231px;
+  font-size: 12.6px;
+  letter-spacing: 1.26px;
+  height: 40px;
+}
+
+.form__box {
+  margin-bottom: 200px;
+}
 /*# sourceMappingURL=style.css.map */
