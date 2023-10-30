@@ -390,7 +390,7 @@
               <div class="vegetable-img-contents">
                   <p class="vegetable-theme">TORETATE<br>GIFTS</p>
                   <img class="vegetable-slide-img" src="<?php echo $global_image_path . $gift_img[$i] ?>" width="357" height="541" alt="" loading="lazy">
-                  <img class="vegetable-slide-illust" src="<?php echo $global_image_path . $gift_img_illust[$i] ?>" alt="" loading="lazy">
+                  <!-- <img class="vegetable-slide-illust" src="<?php echo $global_image_path . $gift_img_illust[$i] ?>" alt="" loading="lazy"> -->
                   <p class="vegetable-slide-num"><span>#</span><?php echo $gift_num[$i]; ?></p>
               </div>
               <div class="vegetable-slide-text-box" style="text-align: center; margin-top: -10px;">

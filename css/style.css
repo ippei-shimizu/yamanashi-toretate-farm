@@ -1839,9 +1839,6 @@ fv-slide-img-box {
   top: 0;
 }
 
-.toreate-03-contents {
-  background-color: #fff;
-}
 .toreate-03-contents .green-mountain-img {
   max-height: 158px;
 }
@@ -2178,8 +2175,8 @@ fv-slide-img-box {
   .fv-title-sub {
     font-size: 14.609px;
     letter-spacing: 1.461px;
-    top: 5px;
-    right: -75px;
+    top: 2px;
+    right: -70px;
   }
   .fv-title h2 {
     margin-bottom: 7px;
