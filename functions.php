@@ -11,6 +11,10 @@ function my_theme_styles_and_scripts() {
       $version = filemtime(get_template_directory() . '/js/top.js');
       wp_enqueue_script('top-script', get_template_directory_uri() . '/js/top.js', array(), $version, true);
     }
+    if (is_page("about")) {
+      $version = filemtime(get_template_directory() . '/js/about.js');
+      wp_enqueue_script('top-script', get_template_directory_uri() . '/js/about.js', array(), $version, true);
+    }
   }
 }
 

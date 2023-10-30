@@ -41,11 +41,11 @@
           <ul class="header-nav-box">
             <?php
             $titles = ["ABOUT", "CONTACT", "TOPICS", "INSTAGRAM"];
-            $links = ["/about", "/contact", "/#topics", "https://www.instagram.com/yamanashitoretatenouen/"];
+            $links = ["/about", "/contact", "https://note.com/toretatefarm/", "https://www.instagram.com/yamanashitoretatenouen/"];
 
             foreach ($titles as $index => $title) :
-                $isExternal = ($title == "INSTAGRAM") ? ' target="_blank" rel="noopener noreferrer"' : '';
-                $link = ($title == "INSTAGRAM") ? $links[$index] : home_url($links[$index]);
+              $isExternal = ($title == "INSTAGRAM" || $title == "TOPICS") ? ' target="_blank" rel="noopener noreferrer"' : '';
+              $link = ($title == "INSTAGRAM" || $title == "TOPICS") ? $links[$index] : home_url($links[$index]);
             ?>
                 <li class="header-list">
                     <a href="<?php echo esc_url($link); ?>"<?php echo $isExternal; ?>>
