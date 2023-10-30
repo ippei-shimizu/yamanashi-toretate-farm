@@ -23,10 +23,10 @@
 .contact-msg-text {
   color: $color-text;
   text-align: center;
-  font-family: $family-gothicMB-de-bold;
+  font-family: $family-A-OTF-GothicMB101Pro-Medium;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 505;
   line-height: normal;
   letter-spacing: 2px;
 }
@@ -42,10 +42,10 @@
 .products-title {
   color: $color-text;
   text-align: center;
-  font-family: $family-gothicMB-de-bold;
+  font-family: $family-A-OTF-GothicMB101Pro-Medium;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 505;
   line-height: normal;
   letter-spacing: 2px;
   border: 1px solid $color-text;
@@ -59,10 +59,10 @@
   margin: 32px auto 14px;
   color: $color-text;
   text-align: center;
-  font-family: $family-gothicMB-de-bold;
+  font-family: $family-A-OTF-GothicMB101Pro-Medium;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 505;
   line-height: normal;
   letter-spacing: 2px;
   span {
@@ -93,10 +93,10 @@
 .products-name {
   color: $color-text;
   text-align: center;
-  font-family: $family-gothicMB-de-bold;
+  font-family: $family-A-OTF-GothicMB101Pro-Medium;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 505;
   line-height: normal;
   letter-spacing: 2px;
   margin-bottom: 7px;
@@ -142,19 +142,19 @@
     margin-top: 30px;
     p {
       color: $color-text;
-      font-family: $family-gothicMB-de-bold;
+      font-family: $family-A-OTF-GothicMB101Pro-Medium;
       font-size: 20px;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 505;
       line-height: normal;
       letter-spacing: 2px;
     }
     .required {
       color: #fbc6d0;
-      font-family: $family-gothicMB-de-bold;
+      font-family: $family-A-OTF-GothicMB101Pro-Medium;
       font-size: 14px;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 505;
       line-height: normal;
       letter-spacing: 1.4px;
       vertical-align: super;
@@ -175,10 +175,10 @@
     .wpcf7-list-item-label {
       color: $color-text;
       text-align: center;
-      font-family: $family-gothicMB-de-bold;
+      font-family: $family-A-OTF-GothicMB101Pro-Reg;
       font-size: 22px;
       font-style: normal;
-      font-weight: 600;
+      font-weight:505;
       line-height: normal;
       letter-spacing: 2.2px;
     }
@@ -236,14 +236,14 @@
       background-color: #d9d9d978;
       padding: 30px 24px;
       font-size: 20px;
-      font-family: $family-gothicMB-de-bold;
+      font-family: $family-gothicMB-de-Light;
       color: $color-text;
       &::placeholder {
         color: #c1c1c1;
-        font-family: $family-gothicMB-de-bold;
+        font-family: $family-gothicMB-de-Light;
         font-size: 20px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         line-height: normal;
         letter-spacing: 2px;
       }
@@ -253,14 +253,14 @@
       background-color: #d9d9d978;
       padding: 30px 24px;
       font-size: 20px;
-      font-family: $family-gothicMB-de-bold;
+      font-family: $family-gothicMB-de-Light;
       color: $color-text;
       &::placeholder {
         color: #c1c1c1;
-        font-family: $family-gothicMB-de-bold;
+        font-family: $family-gothicMB-de-Light;
         font-size: 20px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         line-height: normal;
         letter-spacing: 2px;
       }
@@ -309,7 +309,7 @@
     height: 65px;
     color: $color-text;
     text-align: center;
-    font-family: $family-gothicMB-de-bold;
+    font-family: $family-A-OTF-GothicMB101Pro-Medium;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;

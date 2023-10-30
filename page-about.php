@@ -35,10 +35,14 @@
       <div class="about-img-box-03 about-img-box fade-up-after">
         <img class="about-img-03 about-img" src="<?php echo $global_image_path ?>about-img-03.png" width="1240" height="836" alt="" loading="lazy">
       </div>
-      <h3 class="about-section-title">
-        <span class="right-fade">環境に配慮した低農薬散布。</span>
-        <span class="right-fade">山梨GAP取得。</span>
-      </h3>
+      <div class="about-section-title">
+        <h3 class="right-fade">
+          <span>環境に配慮した低農薬散布。</span>
+        </h3>
+        <h3 class="right-fade"> 
+          <span>山梨GAP取得。</span>
+        </h3>
+      </div>
     </div>
   </div>
 </section>

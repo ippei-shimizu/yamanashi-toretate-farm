@@ -5,19 +5,63 @@
 .right-fade {
   transform-origin: right center;
   -webkit-transform-origin: right center;
-  transform: scale3d(0, 1, 1) translate(0%, 0%) rotate(0deg);
-  transition: all 1s cubic-bezier(0.885, 0.02, 0.165, 0.995);
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: width 1s ease;
+  }
+  span {
+    display: block;
+    transform: translateX(150%);
+    transition: transform 0.8s ease 0.8s;
+  }
   &.is-visit {
-    transform: scale3d(1, 1, 1) translate(0%, 0%) rotate(0deg);
+    &::after {
+      width: 100%;
+    }
+    span {
+      transform: translateX(0);
+    }
   }
 }
 .right-fade-sp {
   transform-origin: right center;
   -webkit-transform-origin: right center;
-  transform: scale3d(0, 1, 1) translate(0%, 0%) rotate(0deg);
-  transition: all 1s cubic-bezier(0.885, 0.02, 0.165, 0.995);
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: width 1s ease;
+  }
+  span {
+    display: block;
+    transform: translateX(150%);
+    transition: transform 0.8s ease 0.8s;
+  }
   &.is-visit-sp {
-    transform: scale3d(1, 1, 1) translate(0%, 0%) rotate(0deg);
+    &::after {
+      width: 100%;
+    }
+    span {
+      transform: translateX(0);
+    }
   }
 }
 .opacity-fade {
@@ -124,10 +168,11 @@ fv-slide-img-box {
   top: 16px;
   right: -146px;
   transform: rotate(-11.048deg);
-  transition: opacity 1.6s ease .8s;
+  transition: opacity 1.6s ease 1.4s;
 }
 .fv-title {
-  span {
+  overflow: hidden;
+  h2 {
     width: fit-content;
     display: block;
     color: $color-text;
@@ -137,7 +182,6 @@ fv-slide-img-box {
     font-style: normal;
     font-weight: 600;
     letter-spacing: 5.357px;
-    background-color: #fff;
     margin: 0 0 20px auto;
     padding: 8px 24px;
   }
@@ -153,7 +197,7 @@ fv-slide-img-box {
   line-height: normal;
   letter-spacing: 4.2px;
   margin-top: 28px;
-  transition: opacity 1.6s ease 1.2s;
+  transition: opacity 1.6s ease 1.8s;
 }
 .fv {
   .swiper-pagination {
@@ -328,7 +372,7 @@ fv-slide-img-box {
 }
 .about-01 {
   padding-top: 360px;
-  padding-bottom: 270px;
+  padding-bottom: 554px;
   background-color: #fff;
   position: sticky;
   top: 0;
@@ -535,7 +579,8 @@ fv-slide-img-box {
 }
 .toreate-02 {
   background-color: #fff;
-  padding-top: 270px;
+  padding-top: 56px;
+  padding-bottom: 554px;
   position: sticky;
   top: -1px;
   z-index: 3;
@@ -754,12 +799,12 @@ fv-slide-img-box {
 /* section toretate-03
    ----------------------------------------------------------------- */
 .bg-white {
-  height: 270px;
+  height: 554px;
   background-color: #fff;
 }
 .toreate-03 {
-  padding-top: 270px;
-  padding-bottom: 48px;
+  padding-top: 56px;
+  padding-bottom: 554px;
   background-color: #fff;
   position: sticky;
   top: 0;
@@ -858,7 +903,7 @@ fv-slide-img-box {
     padding-bottom: 158px;
   }
   .about-01-num {
-    font-size: 120px;
+    font-size: 100px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1097,16 +1142,22 @@ fv-slide-img-box {
     right: -75px;
   }
   .fv-title {
+    h2 {
+      margin-bottom: 7px;
+      font-size: 21.097px;
+      letter-spacing: 2.11px;
+      padding: 6px 4px 6px 9px;
+    }
     span {
       font-size: 21.097px;
       letter-spacing: 2.11px;
-      margin-bottom: 7.7px;
     }
   }
   .fv-text {
     font-size: 5.514px;
     letter-spacing: 2px;
     padding-right: 15px;
+    margin-top: 4px;
   }
   .fv-slide-img-front {
     padding-left: 31px;
@@ -1252,6 +1303,7 @@ fv-slide-img-box {
    ----------------------------------------------------------------- */
   .toreate-02 {
     padding-top: 58.5px;
+    padding-bottom: 120px;
     .section-tile {
       margin-top: 28px;
       margin-bottom: 0;
@@ -1347,7 +1399,8 @@ fv-slide-img-box {
     height: 100px;
   }
   .toreate-03 {
-    padding-top: 100px;
+    padding-top: 58.5px;
+    padding-bottom: 160px;
   }
   .orenge-wood-left {
     width: 65.733px;
@@ -1396,7 +1449,7 @@ fv-slide-img-box {
       padding-bottom: 71px;
     }
     .about-01-num {
-      font-size: 70px;
+      font-size: 60px;
     }
     .swiper-button-prev {
       right: initial;

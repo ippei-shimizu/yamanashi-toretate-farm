@@ -2,7 +2,6 @@
 
 <div id="loading" class="loading">
   <div class="loading-icon-box">
-    <div class="loading-border"></div>
     <img class="loading-icon" src="<?php echo $global_image_path; ?>loading-icon.svg" width="60" height="45" alt="">
     <img class="loading-logo" src="<?php echo $global_image_path; ?>logo.svg" alt="山梨とれたて農園" width="126" height="90">
   </div>
@@ -44,10 +43,10 @@
         </div>
         <div class="fv-title-area">
           <p class="fv-title-sub opacity-fade opacity-fade-sp">Do you know?</p>
-          <h2 class="fv-title">
-            <span class="right-fade right-fade-sp fv-title-span">知ってる？</span>
-            <span class="right-fade right-fade-sp fv-title-span">とれたてのホントの味</span>
-          </h2>
+          <div class="fv-title">
+            <h2 class="right-fade right-fade-sp fv-title-span"><span>知ってる？</span></h2>
+            <h2 class="right-fade right-fade-sp fv-title-span"><span>とれたてのホントの味</span></h2>
+          </div>
           <p class="fv-text opacity-fade opacity-fade-sp">Freshly harvested vegetables.<br>Freshly picked fruit.<br>The blessings and deliciousness of nature.</p>
         </div>
       </div>
@@ -198,8 +197,8 @@
           "6",
         ];
         $vegetable_img = [
-          "vegetable-01.png",
-          "vegetable-02.png",
+          "vegetable-01-1.jpg",
+          "vegetable-02-1.jpg",
           "vegetable-03.png",
           "vegetable-04.png",
           "vegetable-05.png",
@@ -369,19 +368,19 @@
           "1",
         ];
         $gift_img = [
-          "gift-01.png",
+          "gift-01-1.png",
         ];
         $gift_img_illust = [
-          "grape-color.png",
+          "",
         ];
         $gift_num = [
           "01",
         ];
         $gift_title = [
-          "<span>ジャム</span>",
+          "",
         ];
         $gift_text = [
-          "テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■テキスト■",
+          "COMING SOON...",
         ];
       ?>
       <div class="swiper-vegetable">
@@ -394,8 +393,8 @@
                   <img class="vegetable-slide-illust" src="<?php echo $global_image_path . $gift_img_illust[$i] ?>" alt="" loading="lazy">
                   <p class="vegetable-slide-num"><span>#</span><?php echo $gift_num[$i]; ?></p>
               </div>
-              <div class="vegetable-slide-text-box">
-                  <p class="vegetable-slide-sub">とれたての</p>
+              <div class="vegetable-slide-text-box" style="text-align: center; margin-top: -10px;">
+                  <p class="vegetable-slide-sub"></p>
                   <h2 class="vegetable-name"><?php echo $gift_title[$i]; ?></h2>
                   <p class="vegetable-description"><?php echo $gift_text[$i]; ?></p>
               </div>

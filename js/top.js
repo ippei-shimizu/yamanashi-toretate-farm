@@ -1,18 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
   const loading = document.getElementById("loading");
-  const loadingBorder = loading.querySelector(".loading-border");
   const loadingIcon = loading.querySelector(".loading-icon");
   const loadingLogo = loading.querySelector(".loading-logo");
   const body = document.body;
   const fvImgLeft = document.querySelector(".fv-img-left");
 
-  gsap.to(loadingBorder, { delay: 0.2, duration: 1, y: 0 });
-  gsap.to(loadingIcon, { delay: 2, duration: 1, opacity: 1 });
-  gsap.to([loadingBorder, loadingIcon], { delay: 3, duration: 1, opacity: 0 });
-  gsap.to(loadingLogo, { delay: 4.4, duration: 1, opacity: 1 });
+  gsap.to(loadingIcon, { delay: .2, duration: 1, opacity: 1 });
+  gsap.to(loadingIcon, { delay: 1.2, duration: 1, opacity: 1 });
+  gsap.to(loadingLogo, { delay: 2, duration: 1, opacity: 1 });
   gsap.to(loading, {
-    delay: 6.4,
-    duration: 0.5,
+    delay: 4.2,
+    duration: 0.3,
     opacity: 0,
     onComplete: () => {
       setTimeout(() => {
@@ -21,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 1400);
     },
   });
-  gsap.to(fvImgLeft, { delay: 6.8, duration: 1.6, x: 0 });
+  gsap.to(fvImgLeft, { delay: 5.4, duration: 1.2, x: 0 });
 
   // scroll animation
   const targetClasses = [

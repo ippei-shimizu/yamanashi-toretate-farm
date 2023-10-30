@@ -166,6 +166,7 @@
   flex-direction: column;
   row-gap: 11px;
   align-items: flex-end;
+  overflow: hidden;
   span {
     display: block;
     color: $color-text;
