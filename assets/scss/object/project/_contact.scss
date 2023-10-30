@@ -127,9 +127,12 @@
   letter-spacing: 1.4px;
   margin-top: 49px;
 }
+.form {
+  margin-bottom: 495px;
+}
 .form__box {
   max-width: 746px;
-  margin: 0 auto 495px;
+  margin: 0 auto 0;
 }
 .form__table {
   width: 100%;
@@ -401,71 +404,71 @@
       }
     }
   }
-}
-.select-contact {
-  th {
-    margin-bottom: 7px;
-  }
-  td {
-    margin-bottom: 0px;
-    .wpcf7-list-item-label {
-      font-size: 12px;
-      letter-spacing: 1.2px;
+  .select-contact {
+    th {
+      margin-bottom: 7px;
     }
-    .wpcf7-list-item {
-      margin-right: 10px;
-    }
-  }
-}
-.contact-input {
-  .wpcf7-form-control-wrap {
-    input {
-      font-size: 12px;
-      letter-spacing: 1.2px;
-      padding: 19px 15px;
-      &::placeholder {
+    td {
+      margin-bottom: 0px;
+      .wpcf7-list-item-label {
         font-size: 12px;
         letter-spacing: 1.2px;
       }
-    }
-    textarea {
-      font-size: 12px;
-      letter-spacing: 1.2px;
-      padding: 19px 15px;
-      &::placeholder {
-        font-size: 12px;
-        letter-spacing: 1.2px;
-      }
-      &#info {
-        height: 85px;
+      .wpcf7-list-item {
+        margin-right: 10px;
       }
     }
   }
-}
-.td-required {
-  font-size: 10px;
-  letter-spacing: 1px;
-  margin-top: 19px;
-}
-.privacy-policy {
-  margin: 120px auto;
-  padding: 30px 26px;
-  height: 244px;
-  p {
+  .contact-input {
+    .wpcf7-form-control-wrap {
+      input {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        padding: 19px 15px;
+        &::placeholder {
+          font-size: 12px;
+          letter-spacing: 1.2px;
+        }
+      }
+      textarea {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+        padding: 19px 15px;
+        &::placeholder {
+          font-size: 12px;
+          letter-spacing: 1.2px;
+        }
+        &#info {
+          height: 85px;
+        }
+      }
+    }
+  }
+  .td-required {
     font-size: 10px;
-    line-height: 20px;
     letter-spacing: 1px;
-    margin-bottom: 24px;
+    margin-top: 19px;
   }
-}
-.confirm__box {
-  p {
-    max-width: 231px;
-    font-size: 12.6px;
-    letter-spacing: 1.26px;
-    height: 40px;
+  .privacy-policy {
+    margin: 120px auto;
+    padding: 30px 26px;
+    height: 244px;
+    p {
+      font-size: 10px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
   }
-}
-.form__box {
-  margin-bottom: 200px;
+  .confirm__box {
+    p {
+      max-width: 231px;
+      font-size: 12.6px;
+      letter-spacing: 1.26px;
+      height: 40px;
+    }
+  }
+  .form {
+    margin-bottom: 200px;
+  }
 }
