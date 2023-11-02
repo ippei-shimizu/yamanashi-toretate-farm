@@ -17,7 +17,6 @@
   width: 130px;
   height: 90px;
   position: relative;
-  overflow: hidden;
 }
 .loading-border {
   width: 3.394px;
@@ -40,7 +39,7 @@
 }
 .loading-logo {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;

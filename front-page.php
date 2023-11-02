@@ -3,7 +3,7 @@
 <div id="loading" class="loading">
   <div class="loading-icon-box">
     <img class="loading-icon" src="<?php echo $global_image_path; ?>loading-icon.svg" width="60" height="45" alt="">
-    <img class="loading-logo" src="<?php echo $global_image_path; ?>logo.svg" alt="山梨とれたて農園" width="126" height="90">
+    <img class="loading-logo" src="<?php echo $global_image_path; ?>logo-2.svg" alt="山梨とれたて農園" width="126" height="90">
   </div>
 </div>
 
@@ -380,7 +380,7 @@
           "",
         ];
         $gift_text = [
-          "COMING SOON...",
+          "山梨とれたて農園では、とれたてのおいしさをたくさんの皆様に味わっていただくために、一年中季節問わず大地の恵みを楽しめる商品を開発中です。",
         ];
       ?>
       <div class="swiper-vegetable">
@@ -389,7 +389,7 @@
             <div class="vegetable-slide-img-box swiper-slide vegetable-slide-img-box-<?php echo $gift_class[$i]; ?>">
               <div class="vegetable-img-contents">
                   <p class="vegetable-theme">TORETATE<br>GIFTS</p>
-                  <img class="vegetable-slide-img" src="<?php echo $global_image_path . $gift_img[$i] ?>" width="357" height="541" alt="" loading="lazy">
+                  <img class="vegetable-slide-img" src="https://nagataki.xyz/wp-content/uploads/2023/10/commingsoon.jpg" width="357" height="541" alt="" loading="lazy">
                   <!-- <img class="vegetable-slide-illust" src="<?php echo $global_image_path . $gift_img_illust[$i] ?>" alt="" loading="lazy"> -->
                   <p class="vegetable-slide-num"><span>#</span><?php echo $gift_num[$i]; ?></p>
               </div>

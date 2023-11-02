@@ -6,17 +6,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const fvImgLeft = document.querySelector(".fv-img-left");
 
   gsap.to(loadingIcon, { delay: .2, duration: 1, opacity: 1 });
-  gsap.to(loadingIcon, { delay: 1.2, duration: 1, opacity: 1 });
-  gsap.to(loadingLogo, { delay: 2, duration: 1, opacity: 1 });
+  gsap.to(loadingIcon, { delay: 0.8, duration: 1, opacity: 1 });
+  gsap.to(loadingLogo, { delay: 1.6, duration: 1, opacity: 1 });
   gsap.to(loading, {
-    delay: 4.2,
+    delay: 3.4,
     duration: 0.3,
     opacity: 0,
     onComplete: () => {
       setTimeout(() => {
         loading.style.zIndex = "-1000";
         body.style.overflow = "initial";
-      }, 1400);
+      }, 1200);
     },
   });
   gsap.to(fvImgLeft, { delay: 5.4, duration: 1.2, x: 0 });

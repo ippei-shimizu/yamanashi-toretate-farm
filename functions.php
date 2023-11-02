@@ -43,7 +43,7 @@ function note_feed_display($feedUrl, $num = 1 , $length = 80) {
     if(!$feedUrl) { return false; } 
     $i = 0; 
     if ($length != 0) { $length = ($length * 2) + 2; } 
-    require_once "feed.php"; 
+    require_once "Feed.php"; 
     $feed = new Feed;
 
     try { 
