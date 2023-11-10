@@ -27,7 +27,7 @@
       <div class="about-img-box-01 about-img-box fade-up-after">
         <img class="about-img-01 about-img" src="<?php echo $global_image_path ?>about-img-01.png" width="1139" height="840" alt="" loading="lazy">
       </div>
-      <div class="about-img-box-02 about-img-box fade-up-after">
+      <div class="about-img-box-02 about-img-box fade-up-opacity">
         <img class="about-img-02 about-img" src="<?php echo $global_image_path ?>about-img-02.png" width="795" height="392" alt="" loading="lazy">
       </div>
     </div>
@@ -61,7 +61,7 @@
     <div class="showa-img-wrap-01 about-img-wrap">
       <div class="showa-img-left">
         <p class="showa-text fade-up">気候、土壌、栄養と自然が育んだ奇跡の土地により美味しい野菜が作られます。人も同じです。環境、食事、学問などその時その場所で育てられた人によって十人十色の輝きを発します。</p>
-        <div class="showa-img-box-01 about-img-box fade-up-after">
+        <div class="showa-img-box-01 about-img-box fade-up-opacity">
           <img class="showa-img-01 about-img" src="<?php echo $global_image_path ?>showa-img-01.png" width="633" height="446" alt="" loading="lazy">
         </div>
       </div>
@@ -89,14 +89,14 @@
     <div class="future-img-box-01 about-img-box fade-up-after">
       <img class="future-img-01 about-img" src="<?php echo $global_image_path ?>future-img-01.png" width="1440" height="928" alt="" loading="lazy">
     </div>
-    <div class="future-img-box-02 about-img-box fade-up-after">
+    <div class="future-img-box-02 about-img-box fade-up-opacity">
       <img class="future-img-02 about-img" src="<?php echo $global_image_path ?>future-img-02.png" width="547" height="397" alt="" loading="lazy">
     </div>
     <div class="future-img-wrap">
       <div class="future-img-box-03 about-img-box fade-up-after">
         <img class="future-img-03 about-img" src="<?php echo $global_image_path ?>future-img-03.png" width="727" height="825" alt="" loading="lazy">
       </div>
-      <div class="future-img-box-04 about-img-box fade-up-after">
+      <div class="future-img-box-04 about-img-box fade-up-opacity">
         <img class="future-img-04 about-img" src="<?php echo $global_image_path ?>future-img-04.png" width="727" height="513" alt="" loading="lazy">
       </div>
     </div>

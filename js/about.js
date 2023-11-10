@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ".fade-up-after",
     ".fade-up",
     ".right-fade",
+    ".fade-up-opacity",
   ];
 
   targetClasses.forEach((targetClass) => {

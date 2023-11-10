@@ -2573,6 +2573,16 @@ fv-slide-img-box {
   transform: translate3d(0, 0%, 0);
 }
 
+.fade-up-opacity {
+  opacity: 0;
+  transform: translate(0, 2vw);
+  transition: transform 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s, opacity 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.fade-up-opacity.is-visit {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
 /* about
    ----------------------------------------------------------------- */
 .about-fv {
